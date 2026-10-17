@@ -1,16 +1,27 @@
 """
-Question 53: Find the Largest Element
-Given a list of numbers, write Python code using a loop to find and print the largest element. Do not use the built-in max() function.
+Question 54: Check for Target Existence
+Write a program that takes a list and a target number. Use a loop to determine if the target number exists in the list. Do not use the in operator.
 # Example:
-# numbers = [3, 1, 4, 1, 5, 9, 2, 6]
-# Expected Output: The largest element is:9
+# my_list = [10, 20, 30, 40, 50]
+# target = 30
+# Expected Output: 30 exists in the list.
+# target = 60
+# Expected Output: 60 does not exist in the list
+
 """
 
-numbers = [3, 1, 4, 1, 5, 9, 2, 6]
-n = len(numbers)
-maxi = float("-inf")
-for i in numbers:
-    if i > maxi:
-        maxi = i
 
-print(f"Largest Element is {maxi}")
+def does_Exist(lst, target):
+    for num in my_list:
+        if num == target:
+            return True
+    return False
+
+
+my_list = [10, 20, 30, 40, 50]
+target = int(input("Entr the Target: "))
+a = does_Exist(my_list, target)
+if a == True:
+    print(f"{target} exists in the list")
+else:
+    print(f"{target} does not exists in the list")
