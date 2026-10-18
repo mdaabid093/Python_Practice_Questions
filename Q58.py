@@ -20,8 +20,7 @@ def samllest_and_largerst(lst):
     for i in lst:
         if i < small:
             small = i
-
-    return print(f"Largest is {max} and Smallest is {small}")
+    print(f"Largest is {max} and Smallest is {small}")
 
 
 lst = [3, 5, 1, 33, 55, 99, 4, 3]
